@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <div class="cont">
+        <div class="upline">
+            <header>
+                <h2>Piano</h2>
+                <div class="column volume">
+                    Volume
+                    <input type="range" min="0" max="1" value="0.5" step="any" />
+                </div>
+                <div class="column check">
+                    Keys 
+                    <input type="checkbox" checked />
+                </div>
+            </header>
+        </div>
+        <div class="keyboard">
+            <ul class="keys">
+                <li class="key white" data-keyname="a"> <span> C </span></li>
+                <li class="key black" data-keyname="w"> <span> c# </span></li>
+                <li class="key white" data-keyname="s"> <span> D </span></li>
+                <li class="key black" data-keyname="e"> <span> D# </span></li>
+                <li class="key white" data-keyname="d"> <span> E </span></li>
+                <li class="key white" data-keyname="f"> <span> F </span></li>
+                <li class="key black" data-keyname="t"> <span> f# </span></li>
+                <li class="key white" data-keyname="g"> <span> G </span></li>
+                <li class="key black" data-keyname="y"> <span> g# </span></li>
+                <li class="key white" data-keyname="h"> <span> A </span></li>
+                <li class="key black" data-keyname="u"> <span> a# </span></li>
+                <li class="key white" data-keyname="j"> <span> B </span></li>
+                <li class="key white" data-keyname="k"> <span> C </span></li>
+                <li class="key black" data-keyname="o"> <span> c# </span></li>
+                <li class="key white" data-keyname="l"> <span> D </span></li>
+                <li class="key black" data-keyname="p"> <span> D# </span></li>
+                <li class="key white" data-keyname=";"> <span> E </span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
