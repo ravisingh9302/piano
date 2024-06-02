@@ -2,15 +2,19 @@
 const pianokeys = document.querySelectorAll(".keys>.key");
 let volume = document.querySelector(".volume");
 let checkbox = document.querySelector(".check");
+// let whitekey = document.querySelector(".white");
+let whitekey = document.getElementById('whitekeywidth')
+let blackkey = document.querySelectorAll(".black");
 
 let audio = new Audio("audio/a.wav");
 let allnames = [];
 
 
-const playtune = (key) => {
+const playtune =async (key) => {
+    console.log("key",key)
     audio.src = `audio/${key}.wav`;
-    audio.play();
-    // console.log(allnames);
+    await audio.play();
+    console.log(allnames);
 
     const clickedkey = document.querySelector(`[data-keyname="${key}"]`);
     clickedkey.classList.add('active');
@@ -45,3 +49,12 @@ const pressedkey = (e) => {
 document.addEventListener('keydown', pressedkey);
 volume.addEventListener('input',volumelevel);
 checkbox.addEventListener('click',showhide);
+
+
+// console.log(whitekey.clientWidth);
+
+// blackkey.style.marginLeft="50px";
+// blackkey.style.marginRight="50px";
+
+
+
